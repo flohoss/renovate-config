@@ -18,9 +18,9 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: ${{ github.workspace }}/config.js
         env:
-          RENOVATE_AUTHOR: ${{ vars.AUTHOR }}
-          RENOVATE_PRIVATE_EMAIL: ${{ secrets.PRIVATE_EMAIL }}
           RENOVATE_USERNAME: ${{ github.actor }}
+          RENOVATE_AUTHOR: github-actions[bot]
+          RENOVATE_PRIVATE_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           RENOVATE_DOCKER_HUB_USERNAME: ${{ vars.DOCKER_HUB_USERNAME }}
           RENOVATE_DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
           RENOVATE_GHCR_USERNAME: ${{ vars.GHCR_USERNAME }}
