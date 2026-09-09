@@ -18,11 +18,11 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: ${{ github.workspace }}/config.js
         env:
-          RENOVATE_APP_ID: ${{ secrets.RENOVATE_APP_ID }}
+          RENOVATE_APP_ID: ${{ vars.RENOVATE_APP_ID }}
           RENOVATE_APP_PRIVATE_KEY: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
           RENOVATE_USERNAME: ${{ vars.RENOVATE_BOT_USERNAME }}
           RENOVATE_AUTHOR: ${{ vars.RENOVATE_BOT_USERNAME }}
-          RENOVATE_PRIVATE_EMAIL: ${{ vars.RENOVATE_BOT_EMAIL }}
+          RENOVATE_PRIVATE_EMAIL: ${{ vars.RENOVATE_APP_ID }}+${{ vars.RENOVATE_BOT_USERNAME }}@users.noreply.github.com
           RENOVATE_DOCKER_HUB_USERNAME: ${{ vars.DOCKER_HUB_USERNAME }}
           RENOVATE_DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
           RENOVATE_GHCR_USERNAME: ${{ vars.GHCR_USERNAME }}
