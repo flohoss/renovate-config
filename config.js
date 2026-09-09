@@ -3,7 +3,7 @@ module.exports = {
     token: process.env.RENOVATE_TOKEN,
     gitAuthor: `${process.env.RENOVATE_AUTHOR} <${process.env.RENOVATE_PRIVATE_EMAIL}>`,
     username: process.env.RENOVATE_USERNAME,
-    repositories: [`${process.env.RENOVATE_USERNAME}/docker-compose`, `${process.env.RENOVATE_USERNAME}/stacks`],
+    repositories: ['flohoss/docker-compose', 'flohoss/stacks'],
     onboarding: false,
     requireConfig: 'optional',
     hostRules: [
