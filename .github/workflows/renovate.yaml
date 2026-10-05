@@ -3,7 +3,7 @@ name: renovate
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 13 * * *' # 15:00 CEST (summer), 14:00 CET (winter)
+    - cron: '42 13 * * *' # 15:42 CEST (summer), 14:42 CET (winter)
 
 jobs:
   renovate:
