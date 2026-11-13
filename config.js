@@ -4,7 +4,9 @@ module.exports = {
     repositories: ['flohoss/docker-compose', 'flohoss/stacks'],
     onboarding: false,
     requireConfig: 'optional',
-    dependencyDashboard: true,
+    dependencyDashboard: {
+        enabled: true,
+    },
     hostRules: [
         {
             matchHost: 'docker.io',
